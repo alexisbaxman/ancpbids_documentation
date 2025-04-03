@@ -20,7 +20,7 @@ Finally, there are some special files and folders:
 * **DerivativeFolder:** is a sub-class of Folder. It contains the processed version of the dataset. IDerivatives Folder often have their own new directory and file structure different from the main dataset. Even if BIDS specification does not fully specify how a derivative folder should be structured; it must include the dataset_description.json with information of the dataset and the analysis pipeline.
 * **Metadata:** also known as Sidecar files they are JSON files that provide additional information about the neuroimaging data files. They must have the same key-value pairs in their filenames as the data they belong to (sub-02_task-rest_bold.json).
 
-<img src="static/inmemory/3.PNG" alt="bids-schema" width="600px">
+<img src="../static/inmemory/3.PNG" alt="bids-schema" width="600px">
 
 
 ## 2. The in-memory graph
