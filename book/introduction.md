@@ -12,7 +12,7 @@ ancpBIDS was developed by **Erdal Karaca** as part of his Master Thesis (2022) w
 
 * **Support for multiple BIDS schema versions.** ancpBIDS is able to handle different BIDS versions.
 
-## What is BIDS? <img src="./static/bids.jpg" alt="bids-logo" width="100px" align="center">
+## What is BIDS? <img src="../static/bids.jpg" alt="bids-logo" width="100px" align="center">
 
 
 *"Neuroimaging experiments result in complex data that can be arranged in many different ways, and for a long time, there was no consensus on how to organize and share data obtained in neuroimaging experiments. **Brain Imaging Data Structure (BIDS)**, describes a simple and easy to adopt way of organizing neuroimaging and behavioral data"* (Gorgolewski et al., 2016; Niso et al., 2018). 
