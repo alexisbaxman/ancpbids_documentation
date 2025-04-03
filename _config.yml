@@ -49,6 +49,7 @@ repository:
 # Advanced and power-user settings
 sphinx:
   config:
+    html_extra_path: ["static"]
     nb_custom_formats:
       .Rmd:
         - jupytext.reads
