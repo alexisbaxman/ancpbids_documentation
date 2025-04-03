@@ -1,0 +1,9 @@
+root: index
+format: jb-book
+chapters:
+- file: introduction
+- file: start
+- file: query
+- file: advanced_query
+  sections:
+    - file: guide/inmemory
