@@ -11,7 +11,7 @@ Folders and files have special meaning in the BIDS specification, determined by 
 
 In a similar way, Files also follow this key-value pairs, followed by a suffix and file extension, are called **Artifacts** (not to be confused with neuroimaging noise sources); and are treated differently according to the properties of its filename. For example, sub-02_task-rest_bikd.nii.gz.
 
-<img src="static/inmemory/2.PNG" alt="figure2" width="400px">
+<img src="../static/inmemory/2.PNG" alt="figure2" width="400px">
 
 This hierarchical structure of a BIDS dataset, resembles a graph. This structure allows ancpBIDS to model the in-memory graph. Every folder and file works as a node, and their *containment* relationship, the edges of the graph.
 
