@@ -3,9 +3,9 @@
 The in-memory graph in ancpBIDS is a data structure that represents a BIDS dataset in a way that makes it easier to interact with. Instead of constantly reading and writing from the filesystem, which is slow and inefficient, ancpBIDS loads the dataset into memory as a graph.
 
 ## 1. The model of a BIDS dataset.
-The dataset is structured as a graph with nodes and edges. The root node is the **Dataset**, which in itself is a **FoldER** and can contain **Folder** and **File** nodes. Each **Folder** can contain more **Folder** and **File** nodes.
+The dataset is structured as a graph with nodes and edges. The root node is the **Dataset**, which in itself is a **Folder** and can contain **Folder** and **File** nodes. Each **Folder** can contain more **Folder** and **File** nodes.
 
-![BIDS schema](static/inmemory/1.PNG)
+![BIDS schema](../static/inmemory/1.PNG)
 
 Folders and files have special meaning in the BIDS specification, determined by their naming scheme and location within the directory structure. BIDS filenames are build with key-value pairs, for example, a folder named *sub-02/* follows the *”sub-<label>”* name pattern, indicating that it belongs to the **Subject** sub-class.
 
