@@ -32,7 +32,7 @@ The layout.get() function allows for more complex queries and can return a **lis
 
 the get() function can simultaneously search for matches with the following parameters:
 
-:::{admonition} Parameters
+```{admonition} Parameters
 :class: dropdown
 
 * **Scope:** The BIDS subdirectory to be searched. Can be ‘raw’ or ‘derivatives’.
@@ -41,7 +41,7 @@ the get() function can simultaneously search for matches with the following para
 * **Extension:** Is the file extensions. Examples are ‘.nii’ or ‘nii.gz’ for MRI, ‘.fif’ for MEG or '.tsv' for tabular files.
 * **Return_type:**Defines the what get() returns. This can be ‘filename’ or ‘dict’, where ‘dict’ is the default.
 
-:::
+```
 
 
 We can use these parameters to **narrow down** or **broaden** our queries. For example, if we want to query for the json metadata file (extension) which contain information about the rawdata (scope) we can use layout.get() with the appropriate parameters:
