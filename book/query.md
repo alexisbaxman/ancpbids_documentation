@@ -34,7 +34,7 @@ A core functionality of ancpBIDS is to extract information from datasets. Once w
 ## Perform some basic queries
 With layout held in-memory, we can now use several functions to extract some useful information of the dataset.
 
-* Get all subjects in the dataset
+* **Get all subjects in the dataset**
 
 ````{tab-set}
 ```{tab-item} MEG
@@ -59,7 +59,7 @@ With layout held in-memory, we can now use several functions to extract some use
 ````
 
 
-* Find how many runs there are:
+* **Find how many runs there are**
 ````{tab-set}
 ```{tab-item} MEG
 
@@ -81,7 +81,7 @@ With layout held in-memory, we can now use several functions to extract some use
 ````
 Note that the returned runs are collected over all subjects and it is not guaranteed that each participant has the same number of runs.
 
-* Check out the tasks of the experiment
+* **Check out the tasks of the experiment**
 ````{tab-set}
 ```{tab-item} MEG
 
