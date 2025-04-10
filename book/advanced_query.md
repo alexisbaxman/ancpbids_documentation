@@ -55,7 +55,7 @@ We can use these parameters to **narrow down** or **broaden** our queries. For e
 ````{tab-set}
 ```{tab-item} MEG
 
-    meg_timeseries_files = layout.get(scope='raw', return_type='filename', suffix='meg', extension='..json', sub='009', task=  ['induction','deduction'])
+    meg_timeseries_files = layout.get(scope='raw', return_type='filename', suffix='meg', extension='.json', sub='009', task=  ['induction','deduction'])
     print(*meg_timeseries, sep='\n')
 
     #Output:
@@ -114,10 +114,12 @@ Now we can also **not** specify certain parameters in our query to **broaden** o
 Beyond timeseries data ('meg' or 'bold'), with specific **suffix** parameter we can retrieve other files defined by the **BIDS standard**. 
 
 ```{admonition}Common suffixes in MEG data:
+
 1. *events:* search for event files, which contains time_stamps and event markers.
 2. *coordystem:* search for the file specifying the coordinate system used in the recording.
 3. *channels:* search for the file which specifies channel names and types.
 4. *scans:* search for the files documenting the different scan sequences that were run.
+
 ```
 
 Here are some examples of how to query for theses BIDS specific files. 
