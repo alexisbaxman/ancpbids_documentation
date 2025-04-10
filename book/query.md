@@ -2,9 +2,7 @@
 
 ## Fetch an existing BIDS dataset
 
-ancpBIDS is able to find and load specific files from your PC. With 'fetch_dataset()', even without unzipping your dataaset, ancpBIDS will be able 
-
-succeeds, even if you haven't unzip your dataset, dataset_path will contain the path to it. Also, in your PC folder _'~/.ancp-bids/datasets'_ you will find the zip file (f.e. ds005-testdata.zip) and the content extracted. If you run the code again, it won't create unnecessary copies.
+ancpBIDS is able to find and load specific files from your PC. With 'fetch_dataset()', even without unzipping your dataaset, ancpBIDS will be able to fetch it even if you haven't unzip your dataset. The output, ´dataset_path´ will contain the path to it and within your PC folder _'~/.ancp-bids/datasets'_ you will find the zip file (f.e. ds005-testdata.zip) and the content extracted. If you run the code again, it won't create unnecessary copies.
 
 
 ````{tab-set}
