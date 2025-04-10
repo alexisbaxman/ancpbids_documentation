@@ -21,7 +21,7 @@ Virtual environments create isolated and sel-contained workspaces, allowing us t
 - **Avoid dependency conflicts:** prevents interferences between project-specific and system-wide dependenciesm, such as common erors related to version mismatches.
 - **Transparency and Open Science:** Ensures that others can replicate your results and reproduce your analysis reliably.
 
-<img src="../static/environment.jpg" alt="bids-schema" width="500px">
+<img src="../static/environment.jpg" alt="bids-schema" width="600px" align="center">
 
 To create and activate your virtual environment, follow these steps:
 1. Navigate to the directory where you want to create the environment using the `cd` command in the terminal.
