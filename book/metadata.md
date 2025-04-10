@@ -52,10 +52,10 @@ Beyond timeseries data ('meg' or 'bold'), with specific **suffix** parameter we 
 
 ```{admonition} Common suffixes in MEG data:
 
-1. *events:* search for event files, which contains time_stamps and event markers.
-2. *coordystem:* search for the file specifying the coordinate system used in the recording.
-3. *channels:* search for the file which specifies channel names and types.
-4. *scans:* search for the files documenting the different scan sequences that were run.
+* **events:** search for event files, which contains time_stamps and event markers.
+* **coordystem:** search for the file specifying the coordinate system used in the recording.
+* **channels:** search for the file which specifies channel names and types.
+* **scans:** search for the files documenting the different scan sequences that were run.
 
 ```
 
