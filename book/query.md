@@ -184,4 +184,5 @@ Metadata from JSON files can be queried using layout.get_metadata and the direct
 
 
 ## Next section:
-In the next section we will continue with more Advanced Queries. 
+In the next section we will continue with more Advanced Queries using multiple filtering parameters and specific BIDS Key-value pairs, as well as retrieving metadata and other descriptive files.
+
