@@ -9,14 +9,14 @@ succeeds, even if you haven't unzip your dataset, dataset_path will contain the 
 
 ````{tab-set}
 ```{tab-item} MEG
-from ancpbids import utils
-dataset_path = utils.fetch_dataset('ds005')
+    from ancpbids import utils
+    dataset_path = utils.fetch_dataset('ds005')
 ```
 
 ```{tab-item} MRI
 
-from ancpbids import utils
-dataset_path = utils.fetch_dataset('ds003483')
+    from ancpbids import utils
+    dataset_path = utils.fetch_dataset('ds003483')
 
 ```
 ````
