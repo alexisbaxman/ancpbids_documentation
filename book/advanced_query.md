@@ -110,8 +110,7 @@ Now we can also **not** specify certain parameters in our query to **broaden** o
 ```
 ````
 
-
 ## Next Section
-In the next section we will cover how to create and store derivatives within a BIDS dataset and ensuring BIDS-compliant naming and structure.
+In the next section we will cover how to retrieve metadata from JSON sidecar files, access BIDS-specific suffix files and filtering entity key.
     
 
