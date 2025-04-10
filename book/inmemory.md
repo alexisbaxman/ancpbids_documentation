@@ -20,17 +20,17 @@ Finally, there are some special files and folders:
 * **DerivativeFolder:** is a sub-class of Folder. It contains the processed version of the dataset. IDerivatives Folder often have their own new directory and file structure different from the main dataset. Even if BIDS specification does not fully specify how a derivative folder should be structured; it must include the dataset_description.json with information of the dataset and the analysis pipeline.
 * **Metadata:** also known as Sidecar files they are JSON files that provide additional information about the neuroimaging data files. They must have the same key-value pairs in their filenames as the data they belong to (sub-02_task-rest_bold.json).
 
-![Metadata example](../static/inmemory/3.PNG)
-
+The picture below shows an example of the hierarchy structure of a BIDS dataset.
+# ![Metadata example](../static/inmemory/3.PNG)
+![Graph example 2](../static/inmemory/5.jpg)
 
 ## 2. The in-memory graph
 
 ancpBIDS creates an implementation level data structure that machines can operate on. This graph/model is a static technical projection of the BIDS schema that allows to create instances that represent files and folders on the file system. 
 
-The following figures show two sifferent simple instances of graph structure. In both, the root node is the dataset, which contains Folders and File nodes. Each Folder might contain more Folder and File nodes.
+The following figure shows a simple instance of graph structure. The root node is the dataset, which contains Folders and File nodes. Each Folder might contain more Folder and File nodes.
 
 ![Graph example 1](../static/inmemory/4.jpg)  
-![Graph example 2](../static/inmemory/5.jpg)
 
  The in-memory graph is built in **four layers**. This enables fast queries, ensures compatibility (thanks to BIDS schema) and modular processing. The graph construction is handled inside the DatasetPopulationPlugin class.
 
