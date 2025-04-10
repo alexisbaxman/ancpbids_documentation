@@ -1,4 +1,4 @@
-# Explanation of the In-Memory Graph in ancpBIDS
+# In-Memory Graph in ancpBIDS
 
 The in-memory graph in ancpBIDS is a data structure that represents a BIDS dataset in a way that makes it easier to interact with. Instead of constantly reading and writing from the filesystem, which is slow and inefficient, ancpBIDS loads the dataset into memory as a graph.
 
