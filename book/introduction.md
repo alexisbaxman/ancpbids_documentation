@@ -37,9 +37,7 @@ In agreement with some members of the PyBIDS community, the ANCPlab developed a 
 ## Next section
 In the next section, we'll walk through the installation and basics for the tutorial.
 
-:::{note} See also
-
+:::{admonition} See also
 If you want to learn more how ancpBIDS uses the BIDS specification for its tasks, [follow this link](guide/inmemory.md).
-
 :::
 
