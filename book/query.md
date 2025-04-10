@@ -1,4 +1,4 @@
-# User Documentation
+# Basic queries
 
 ## Fetch an existing BIDS dataset
 
