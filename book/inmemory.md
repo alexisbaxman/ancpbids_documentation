@@ -22,9 +22,9 @@ Finally, there are some special files and folders:
 
 The picture below shows an example of the hierarchy structure of a BIDS dataset.
 
-'''
+<!--
 ![Metadata example](.. / static/inmemory/3.PNG)
-'''
+-->
  
 ![Graph example 2](../static/inmemory/5.jpg)
 
