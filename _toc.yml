@@ -5,6 +5,7 @@ chapters:
 - file: book/start
 - file: book/query
 - file: book/advanced_query
+- file: book/metadata
 - file: book/write
 - file: book/extra
   sections:
