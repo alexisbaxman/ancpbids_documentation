@@ -2,7 +2,8 @@
 
 # Welcome!
 
-Hello everyone, and welcome to this ancpBIDS tutorial.
+Hello everyone, and welcome to this ancpBIDS documentation.
+
 **ancpBIDS** is a lightweight Python library to handle BIDS datasets efficiently. 
 * Read, query and writes BIDS-compliant datasets.
 * Managing I/O operations within wokflows and analysis pipelines. Such as [MEGqc](https://github.com/ANCPLabOldenburg/MEGqc).
@@ -21,7 +22,7 @@ Hello everyone, and welcome to this ancpBIDS tutorial.
 
 ## I've got a question!
 
-If you have any questions or encounter issues  while working with ancpBIDS, please don’t hesitate to report them on our [GitHUb Issues page](https://bids-specification.readthedocs.io/en/stable/)
+If you have any questions or encounter issues  while working with ancpBIDS, please don’t hesitate to report them on our [GitHUb Issues page]([https://bids-specification.readthedocs.io/en/stable/](https://github.com/ANCPLabOldenburg/ancp-bids/issues))
 
 ![gif](https://cdn.dribbble.com/userupload/27069479/file/original-27ffd4263bacaaacf46e43427621e890.gif)
 
