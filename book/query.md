@@ -9,8 +9,10 @@ succeeds, even if you haven't unzip your dataset, dataset_path will contain the 
 
 ````{tab-set}
 ```{tab-item} MEG
+
     from ancpbids import utils
     dataset_path = utils.fetch_dataset('ds005')
+
 ```
 
 ```{tab-item} MRI
@@ -36,18 +38,22 @@ With layout held in-memory, we can now use several functions to extract some use
 
 ````{tab-set}
 ```{tab-item} MEG
-subs = layout.get_subjects()
-print(subs)
 
-# Output: 
-#['009', '012', '013', '014', '015', '016', '017', '018', '019', '020', '021', '022', '023', '024', '025', '026', '027', '028', '029', '030', '031']
+    subs = layout.get_subjects()
+    print(subs)
+
+    # Output: 
+    #['009', '012', '013', '014', '015', '016', '017', '018', '019', '020', '021', '022', '023', '024', '025', '026', '027', '028', '029', '030', '031']
+
 ```
 
 ```{tab-item} MRI
-subs=layout.get_subjects()
-print(subs)
-#Output:
-# ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16']
+
+    subs=layout.get_subjects()
+    print(subs)
+
+    #Output:
+    # ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16']
 
 ```
 ````
@@ -56,17 +62,21 @@ print(subs)
 * Find how many runs there are:
 ````{tab-set}
 ```{tab-item} MEG
-runs=layout.get_runs()
-print(runs)
-#Output
-#['1']
+
+    runs=layout.get_runs()
+    print(runs)
+    #Output
+    #['1']
+
 ```
 
 ```{tab-item} MRI
-sruns=layout.get_runs()
-print(runs)
-#Output:
-#['01', '02', '03']
+
+    sruns=layout.get_runs()
+    print(runs)
+    #Output:
+    #['01', '02', '03']
+
 ```
 ````
 Note that the returned runs are collected over all subjects and it is not guaranteed that each participant has the same number of runs.
@@ -74,17 +84,23 @@ Note that the returned runs are collected over all subjects and it is not guaran
 * Check out the tasks of the experiment
 ````{tab-set}
 ```{tab-item} MEG
-tasks = layout.get_tasks()
-print(tasks)
-#Output:
-#['deduction','induction']
+
+    tasks = layout.get_tasks()
+    print(tasks)
+
+    #Output:
+    #['deduction','induction']
+
 ```
 
 ```{tab-item} MRI
-task = layout.get_task()
-print(task)
-#Output:
-#['mixedgamblestask']
+
+    task = layout.get_task()
+    print(task)
+
+    #Output:
+    #['mixedgamblestask']
+
 ```
 ````
 
@@ -95,23 +111,27 @@ If you want to check which entities exist in your dataset, you can use the follo
 
 ````{tab-set}
 ```{tab-item} MEG
-avail_entitities=layout.get_entities()
-print("Entities: ", list(avail_entitities.keys()))
-print("Value of task: ", avail_entitities['task'])
 
-#Output:
-#Entities:  ['sub', 'ses', 'task', 'run', 'desc']
-#Value of task:  {'deduction', 'induction'}
+    avail_entitities=layout.get_entities()
+    print("Entities: ", list(avail_entitities.keys()))
+    print("Value of task: ", avail_entitities['task'])
+
+    #Output:
+    #Entities:  ['sub', 'ses', 'task', 'run', 'desc']
+    #Value of task:  {'deduction', 'induction'}
+
 ```
 
 ```{tab-item} MRI
-avail_entitities=layout.get_entities()
-print("Entities: ", list(avail_entitities.keys()))
-print("Value of task: ", avail_entitities['task'])
 
-#Output:
-#Entities:  ['task', 'sub', 'run', 'ds', 'type']
-#Value of task:  {'mixedgamblestask'}
+    avail_entitities=layout.get_entities()
+    print("Entities: ", list(avail_entitities.keys()))
+    print("Value of task: ", avail_entitities['task'])
+
+    #Output:
+    #Entities:  ['task', 'sub', 'run', 'ds', 'type']
+    #Value of task:  {'mixedgamblestask'}
+
 ```
 ````
 
@@ -121,41 +141,42 @@ Metadata from JSON files can be queried using layout.get_metadata and the direct
 
 ````{tab-set}
 ```{tab-item} MEG
-metadata = layout.get_metadata(layout.get(task='induction', suffix='meg',return_type='filename')[3])
 
-print("metadata: ", list(metadata.keys()))
-print("Value of Dewar position: ", metadata['DewarPosition'])
+    metadata = layout.get_metadata(layout.get(task='induction', suffix='meg',return_type='filename')[3])
 
-#Output:
-#metadata:  ['AssociatedEmptyRoom', 'CapManufacturer',
-#'CapManufacturersModelName', 'ContinuousHeadLocalization',
-#'DeviceSerialNumber', 'DewarPosition', 'DigitizedHeadPoints',
-#'DigitizedLandmarks', 'ECGChannelCount', 'ECOGChannelCount',
-#'EEGChannelCount', 'EEGPlacementScheme', 'EEGReference',
-#'EMGChannelCount', 'EOGChannelCount', 'EpochLength',
-#'HeadCoilFrequency', 'InstitutionAddress', 'InstitutionName',
-#'InstitutionalDepartmentName', 'Instructions', 'MEGChannelCount',
-#'MEGREFChannelCount', 'Manufacturer', 'ManufacturersModelName',
-#'MiscChannelCount', 'PowerLineFrequency', 'RecordingDuration',
-#'RecordingType', 'SEEGChannelCount', 'SamplingFrequency',
-#'SoftwareFilters', 'SoftwareVersions', 'SubjectArtefactDescription',
-#'TaskDescription', 'TaskName', 'TriggerChannelCount', 'Description',
-#'RawSources', 'Authors', 'BaselineCorrection', 'BaselineCorrectionMethod',
-#'BaselinePeriod']
-#Value of Dewar position: 'upright'
+    print("metadata: ", list(metadata.keys()))
+    print("Value of Dewar position: ", metadata['DewarPosition'])
 
+    #Output:
+    #metadata:  ['AssociatedEmptyRoom', 'CapManufacturer',
+    #'CapManufacturersModelName', 'ContinuousHeadLocalization',
+    #'DeviceSerialNumber', 'DewarPosition', 'DigitizedHeadPoints',
+    #'DigitizedLandmarks', 'ECGChannelCount', 'ECOGChannelCount',
+    #'EEGChannelCount', 'EEGPlacementScheme', 'EEGReference',
+    #'EMGChannelCount', 'EOGChannelCount', 'EpochLength',
+    #'HeadCoilFrequency', 'InstitutionAddress', 'InstitutionName',
+    #'InstitutionalDepartmentName', 'Instructions', 'MEGChannelCount',
+    #'MEGREFChannelCount', 'Manufacturer', 'ManufacturersModelName',
+    #'MiscChannelCount', 'PowerLineFrequency', 'RecordingDuration',
+    #'RecordingType', 'SEEGChannelCount', 'SamplingFrequency',
+    #'SoftwareFilters', 'SoftwareVersions', 'SubjectArtefactDescription',
+    #'TaskDescription', 'TaskName', 'TriggerChannelCount', 'Description',
+    #'RawSources', 'Authors', 'BaselineCorrection', 'BaselineCorrectionMethod',
+    #'BaselinePeriod']
+    #Value of Dewar position: 'upright'
 
 ```
 
 ```{tab-item} MRI
-metadata = layout.get_metadata(layout.get(task='mixedgamblestask', suffix='bold',return_type='filename')[3])
 
-print("metadata: ", list(metadata.keys()))
-print("Value of RepetitionTime: ", metadata['RepetitionTime'])
+    metadata = layout.get_metadata(layout.get(task='mixedgamblestask', suffix='bold',return_type='filename')[3])
 
-#Output:
-#metadata:  ['RepetitionTime', 'TaskName', 'SliceTiming']
-#Value of RepetitionTime:  2.0
+    print("metadata: ", list(metadata.keys()))
+    print("Value of RepetitionTime: ", metadata['RepetitionTime'])
+
+    #Output:
+    #metadata:  ['RepetitionTime', 'TaskName', 'SliceTiming']
+    #Value of RepetitionTime:  2.0
 
 ```
 ````
