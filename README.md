@@ -1,13 +1,13 @@
 # Welcome!
 
-Hello everyone and welcome to the "ancpBIDS documentation", we're glad to see you here!
+Hello everyone and welcome to the ancpBIDS documentation, we're glad to see you here!
 
-Within these pages, we provide information on how to follow do the basic setup for the book, This [jupyter book](https://jupyterbook.org/intro.html) will include all necessary info. Simply follow this link to the website: https://alexisbaxman.github.io/ancpbids_documentation/
+Within this [jupyter book](https://jupyterbook.org/intro.html) we provide information how to use ancpBIDS to do more basic and more advance queries. It includes some dummy datasets and some more in depth explanations regarding ancpBIDS functioning. Simply follow [this link to the website](https://alexisbaxman.github.io/ancpbids_documentation/).
 
 # I've got a question!
 
-In case you have any questions or difficulties going through the jupiter-book, please don’t hesitate to get in touch with
-us. A great way to do this is to via e-mail ncplab@uol.de.
+In case you have any questions or difficulties working with ancpBIDS, please don’t hesitate to get in touch with
+us. A great way to do this is to via the Issues section of [ancpBIDS](https://github.com/ANCPLabOldenburg/ancp-bids/issues)
 
 ## Acknowledgements
 
