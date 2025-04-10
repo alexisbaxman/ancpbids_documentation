@@ -32,11 +32,13 @@ The layout.get() function allows for more complex queries and can return a **lis
 
 the get() function can simultaneously search for matches with the following parameters:
 
+:::{important}
 1. **scope:** The BIDS subdirectory to be searched. Can be any of ‘raw’ | ‘derivatives’
 2. **entities:** Key-value pairs in the filenames are entities defined in BIDS. Examples are ‘sub’ or ‘run’. Use layout.get_entities() to get a list of entities available in the dataset.
 3. **suffix:** Suffixes define the imaging modality or data type. Examples are ‘bold’ or ‘meg’ but also ‘events’ or ‘participants’
 4. **extension:** Is the file extensions. Examples are ‘.nii’ or ‘nii.gz’ for MRI, ‘.fif’ for MEG or '.tsv' for tabular files.
 5. **return_type:** Defines the what get() returns. This can be ‘filename’ or ‘dict’, where ‘dict’ is the default.
+:::
 
 We can use these parameters to **narrow down** or **broaden** our queries. For example, if we want to query for the json metadata file (extension) which contain information about the rawdata (scope) we can use layout.get() with the appropriate parameters:
 
