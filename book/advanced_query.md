@@ -33,7 +33,7 @@ The layout.get() function allows for more complex queries and can return a **lis
 the get() function can simultaneously search for matches with the following parameters:
 ```{glossary}
 Scope:
-    The BIDS subdirectory to be searched. Can be any of ‘raw’ | ‘derivatives’
+    The BIDS subdirectory to be searched. Can be ‘raw’ or ‘derivatives’.
 
 Entities:
     Key-value pairs in the filenames are entities defined in BIDS. Examples are ‘sub’ or ‘run’. Use layout.get_entities() to get a list of entities available in the dataset.
@@ -47,6 +47,7 @@ Extension:
 Return_type:
     Defines the what get() returns. This can be ‘filename’ or ‘dict’, where ‘dict’ is the default.
 ```
+
 
 
 We can use these parameters to **narrow down** or **broaden** our queries. For example, if we want to query for the json metadata file (extension) which contain information about the rawdata (scope) we can use layout.get() with the appropriate parameters:
@@ -112,12 +113,12 @@ Now we can also **not** specify certain parameters in our query to **broaden** o
 ## Querying metadata and other descriptive files
 Beyond timeseries data ('meg' or 'bold'), with specific **suffix** parameter we can retrieve other files defined by the **BIDS standard**. 
 
-`````{admonition}Common suffixes in MEG data:
+```{admonition}Common suffixes in MEG data:
 1. *events:* search for event files, which contains time_stamps and event markers.
 2. *coordystem:* search for the file specifying the coordinate system used in the recording.
 3. *channels:* search for the file which specifies channel names and types.
 4. *scans:* search for the files documenting the different scan sequences that were run.
-`````
+```
 
 Here are some examples of how to query for theses BIDS specific files. 
 
