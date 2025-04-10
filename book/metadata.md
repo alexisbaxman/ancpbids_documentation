@@ -1,7 +1,7 @@
 
 # Querying for metadata
 
-Once your dataset is loaded, you may want to extract **metadata** or access BIDS-specific suffix files (like ´events.tsv´).
+Once your dataset is loaded, you may want to extract **metadata** or access BIDS-specific suffix files (like *events.tsv*).
 
 ## Querying Metadata
 Metadata stored in JSON files can be queried using `layout.get_metadata` along the directory path. This will return a dictionary with keys and values.
@@ -62,7 +62,7 @@ You can query specific files by using specific **suffix** parameters. This allow
 
 ```
 
-Here are some examples of how to query for your event files with the suffix ´events´. 
+Here are some examples of how to query for your event files with the suffix *'events'*. 
 
 
 ````{tab-set}
@@ -90,8 +90,7 @@ Here are some examples of how to query for your event files with the suffix ´ev
 ```
 ````
 
-The 'get()' function allows you to combine multiple parameters to narrow down your search based on your specific needs.  For example, you can specify if you want to search for your event files in ´.json´ or ´.tsv´ format with the parameter ´extension´.
-
+The `get()` function allows you to combine multiple parameters to narrow down your search based on your specific needs.  For example, you can specify if you want to search for your event files in `.json` or `.tsv` format with the parameter *'extension'*.
 
 ````{tab-set}
 ```{tab-item} MEG
