@@ -42,6 +42,7 @@ We can use these parameters to **narrow down** or **broaden** our queries. For e
 
 ````{tab-set}
 ```{tab-item} MEG
+
   meg_timeseries_files = layout.get(scope='raw', return_type='filename', suffix='meg', extension='..json', sub='009', task=  ['induction','deduction'])
   print(*meg_timeseries, sep='\n')
 
@@ -53,6 +54,7 @@ We can use these parameters to **narrow down** or **broaden** our queries. For e
 ```
 
 ```{tab-item} MRI
+
   bold_files = layout.get(scope='raw',
                     return_type='filename',
                     suffix='bold',
@@ -140,6 +142,7 @@ If your BIDS dataset includes metadata for event files (i.e. a '.json' file desc
 
 ````{tab-set}
 ```{tab-item} MEG
+
   events_sub009_deduc = layout.get(suffix='events', subject='009', extension='.tsv', task='deduction', returntype='filename')
   print(events_sub009_deduc)
 
