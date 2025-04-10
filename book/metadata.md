@@ -1,8 +1,10 @@
 
 # Querying for metadata
 
-## Querying with Keys and Values
-Metadata from JSON files can be queried using layout.get_metadata and the directory path. It will return a dictionary with keys and values.
+Once your dataset is loaded, you may want to extract **metadata** or access BIDS-specific suffix files (like ´events.tsv´).
+
+## Querying Metadata
+Metadata stored in JSON files can be queried using `layout.get_metadata` along the directory path. This will return a dictionary with keys and values.
 
 
 ````{tab-set}
@@ -47,10 +49,11 @@ Metadata from JSON files can be queried using layout.get_metadata and the direct
 ```
 ````
 
-## Querying with Suffixes
-Beyond timeseries data ('meg' or 'bold'), with specific **suffix** parameter we can retrieve other files defined by the **BIDS standard**. 
+## Querying with BIDS Suffixes
+You can query specific files by using specific **suffix** parameters. This allows you to access important BIDS metadata files such as events.tsv, channels.tsv, or scans.tsv, which contain valuable information about your recordings, channels, or scanning sessions.
 
 ```{admonition} Common suffixes in MEG data:
+:class: dropdown
 
 * **events:** search for event files, which contains time_stamps and event markers.
 * **coordystem:** search for the file specifying the coordinate system used in the recording.
@@ -115,3 +118,7 @@ If your BIDS dataset includes metadata for event files (i.e. a '.json' file desc
 
 ```
 ````
+
+
+## Next Section
+In the next section we will cover how to create and store derivatives within a BIDS dataset and ensuring BIDS-compliant naming and structure.
