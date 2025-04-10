@@ -5,4 +5,5 @@ chapters:
 - file: book/start
 - file: book/query
 - file: book/advanced_query
-- file: book/inmemory 
+  sections:
+  - file: extra/inmemory 
