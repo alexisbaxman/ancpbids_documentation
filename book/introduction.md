@@ -2,7 +2,7 @@
 
 ancpBIDS was developed by **Erdal Karaca** as part of his Master Thesis (2022) within the **Applied Neurocognitive Psychology (ANCP) Lab**. It was designed to improve the limitations of **PyBIDS**, another software used for handling I/O (Input/Output) tasks with BIDS compliant dataset. ancpBIDS was able to achieve:
 
-* **Significant performance optimization:** thanks to its [in-memory graph representation](guide/inmemory.md), which efficiently manages the loading process of datasets across multiple layers.
+* **Significant performance optimization:** thanks to its **in-memory graph representation**, which efficiently manages the loading process of datasets across multiple layers.
   * A performance benchmark was performed to measure the time execution of both libraries at loading a dataset and querying for all subject labels. ancpBIDS showed to be significantly faster than PyBIDS.
 
 <img src="../static/benchmark.PNG" alt="bids-benchmark" width="400px">
