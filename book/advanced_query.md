@@ -30,7 +30,7 @@ The layout.get() function allows for more complex queries and can return a **lis
 ```
 ````
 
-the get() function can simultaneously search for matches with the following parameters:
+the `get()` function can simultaneously search for matches with the following parameters:
 
 ```{admonition} Parameters
 :class: dropdown
@@ -44,7 +44,7 @@ the get() function can simultaneously search for matches with the following para
 ```
 
 
-We can use these parameters to **narrow down** or **broaden** our queries. For example, if we want to query for the json metadata file (extension) which contain information about the rawdata (scope) we can use layout.get() with the appropriate parameters:
+We can use these parameters to **narrow down** or **broaden** our queries. For example, if we want to query for the json metadata file (extension) which contain information about the rawdata (scope) we can use `layout.get()` with the appropriate parameters:
 
 ````{tab-set}
 ```{tab-item} MEG
@@ -76,7 +76,7 @@ We can use these parameters to **narrow down** or **broaden** our queries. For e
 ```
 ````
 
-The parameters that you can manipulate strongly depend on the dataset. Every entity defined in your data can be a parameter of the get() function.
+The parameters that you can manipulate strongly depend on the dataset. Every entity defined in your data can be a parameter of the `get()` function.
 
 Now we can also **not** specify certain parameters in our query to **broaden** our query. For example, if we don’t specify the 'sub' parameter, we will receive a list containing all the specified filepaths for all subjects, not only subject 009.
 
