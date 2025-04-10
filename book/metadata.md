@@ -62,7 +62,7 @@ You can query specific files by using specific **suffix** parameters. This allow
 
 ```
 
-Here are some examples of how to query for theses BIDS specific files. 
+Here are some examples of how to query for your event files with the suffix ´events´. 
 
 
 ````{tab-set}
@@ -90,9 +90,7 @@ Here are some examples of how to query for theses BIDS specific files.
 ```
 ````
 
-The 'get()' function allows you to combine multiple parameters to narrow down your search based on your specific needs.
-
-If your BIDS dataset includes metadata for event files (i.e. a '.json' file describing the columns of your '.tsv' event file), you can specify if you want to search for the metadata or the actual event files by setting the extension parameter to '.json' or '.tsv', respectively.
+The 'get()' function allows you to combine multiple parameters to narrow down your search based on your specific needs.  For example, you can specify if you want to search for your event files in ´.json´ or ´.tsv´ format with the parameter ´extension´.
 
 
 ````{tab-set}
