@@ -32,3 +32,10 @@ To create and activate your virtual environment, follow these steps:
 3. Activate the virtual environment:
 
         source /path/to/environment/bin/activate
+
+# Next section
+In the next section we will show how to use ancpBIDS to fetch datasets and perform basic queries.
+
+
+
+
