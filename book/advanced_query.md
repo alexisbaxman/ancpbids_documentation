@@ -113,7 +113,7 @@ Now we can also **not** specify certain parameters in our query to **broaden** o
 ## Querying metadata and other descriptive files
 Beyond timeseries data ('meg' or 'bold'), with specific **suffix** parameter we can retrieve other files defined by the **BIDS standard**. 
 
-```{admonition}Common suffixes in MEG data:
+```{admonition} Common suffixes in MEG data:
 
 1. *events:* search for event files, which contains time_stamps and event markers.
 2. *coordystem:* search for the file specifying the coordinate system used in the recording.
