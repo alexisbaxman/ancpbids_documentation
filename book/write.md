@@ -9,10 +9,6 @@ When ´calling ancpbids.save_dataset()´, the in-memory graph materializes as a 
 For each subject, a separate folder is created, and Artifacts are named automatically: key-value information (such as sub-09) is inferred from the folder structure. This writting functionally allows to export fully valid BIDS derivatives dynamically and automatic. 
 
 ```
-![derivative-example](../static/derivative.png)
-
-
-
 
 
 
