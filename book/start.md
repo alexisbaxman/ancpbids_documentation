@@ -12,7 +12,7 @@ It can also be upgraded:
 
 ## Download an existing BIDS dataset
 
-ancpBIDS was build for BIDS compatible datasets. Therefore, we offer you to download a test dataset from our [github](https://github.com/ANCPLabOldenburg/ancp-bids-dataset) so you can follow this tutorial. These datasets are only meant to learn how to use ancpBIDS, and are not expected to be used in any kind of research. We offer you two types: a MEG dataset ('ds003483') and a MRI dataset ('ds005'). 
+ancpBIDS was build for BIDS compatible datasets. Therefore, we offer you to download a test dataset from our [github](https://github.com/ANCPLabOldenburg/ancp-bids-dataset) so you can follow this tutorial. These datasets are only meant to learn how to use ancpBIDS, and are not expected to be used in any kind of research. We offer you two types: a MEG dataset ´(ds003483)´ and a MRI dataset ´(ds005)´. 
 If you have your own BIDS dataset, feel free to use those instead. Do not forget to adapt the code from the user documentation to your specific dataset.
 
 ## Virtual environments
